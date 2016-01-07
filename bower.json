@@ -1,0 +1,21 @@
+{
+  "name": "debaser-project",
+  "description": "A developer-centric project setup for WordPress.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Brian Clark",
+      "email": "<br.clark.77@gmail.com>"
+    }
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

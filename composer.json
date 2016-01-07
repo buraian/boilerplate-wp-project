@@ -1,0 +1,11 @@
+{
+  "name": "brianclark/debaser-project",
+  "description": "A developer-centric project setup for WordPress.",
+  "authors": [
+    {
+      "name": "Brian Clark",
+      "email": "br.clark.77@gmail.com"
+    }
+  ],
+  "require": {}
+}

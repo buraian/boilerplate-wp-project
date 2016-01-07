@@ -1,0 +1,19 @@
+{
+  "name": "debaser-project",
+  "version": "0.1.0",
+  "description": "A developer-centric project setup for WordPress.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brian Clark",
+      "email": "<br.clark.77@gmail.com>"
+    }
+  ],
+  "repository": {
+    "type" : "git",
+    "url" : "git@bitbucket.org:buraian/debaser-project.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

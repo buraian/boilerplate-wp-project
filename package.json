@@ -10,10 +10,11 @@
     }
   ],
   "repository": {
-    "type" : "git",
-    "url" : "git@bitbucket.org:buraian/debaser-project.git"
+    "type": "git",
+    "url": "git@bitbucket.org:buraian/debaser-project.git"
   },
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-notify": "^0.4.3"
   }
 }

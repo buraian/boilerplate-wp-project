@@ -1,5 +1,5 @@
 {
-  "name": "debaser-project",
+  "name": "boilerplate-project",
   "version": "0.1.0",
   "description": "A developer-centric project setup for WordPress.",
   "license": "MIT",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:buraian/debaser-project.git"
+    "url": "git@bitbucket.org:buraian/boilerplate-project.git"
   },
   "dependencies": {
     "normalize.css": "^4.0.0"

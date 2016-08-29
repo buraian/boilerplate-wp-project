@@ -56,7 +56,7 @@
     "webroot-package": "wordpress/wordpress",
     "installer-paths": {
       "build/plugins/{$name}/": ["type:wordpress-plugin"],
-      "build/themes/{$name}/": ["type:wordpress-theme"]
+      "src/themes/{$name}/": ["type:wordpress-theme"]
     }
   }
 }

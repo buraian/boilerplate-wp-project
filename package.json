@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-project",
+  "name": "boilerplate-wp-project",
   "version": "0.1.0",
   "description": "A developer-centric project setup for WordPress.",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:buraian/boilerplate-project.git"
+    "url": "git@bitbucket.org:buraian/boilerplate-wp-project.git"
   },
   "dependencies": {
     "foundation-sites": "^5.5.3",

@@ -23,10 +23,21 @@ module.exports = (grunt) ->
 
     themes:
       default: 'themes/<%= pkg.name %>'
+      # junior: 'themes/<%= pkg.name %>-junior'
+    # plugins:
+    #   custom: 'plugins/custom'
+    #   another: 'plugins/another'
 
     # Target-specific file lists and/or options go here.
     clean:
-      themes: ['<%= build %>/<%= themes.default %>/**/*']
+      themes: [
+        '<%= build %>/<%= themes.default %>/**/*'
+        # '<%= build %>/<%= themes.junior %>/**/*'
+      ]
+      # plugins: [
+      #   '<%= build %>/<%= plugins.custom %>/**/*'
+      #   '<%= build %>/<%= plugins.another %>/**/*'
+      # ]
 
     concat:
       options:
@@ -63,7 +74,6 @@ module.exports = (grunt) ->
           cwd: '<%= src %>/<%= themes.default %>'
           src: ['favicon.ico']
           dest: '<%= build %>/<%= themes.default %>/'
-          # rename: (dest, src) -> dest + src
         ]
       fonts:
         files: [
@@ -112,11 +122,6 @@ module.exports = (grunt) ->
           dest: '<%= build %>/<%= themes.default %>/assets/css'
           ext: '.min.css'
         ]
-
-    eslint:
-      options:
-        quiet: true
-      target: ['<%= src %>/<%= themes.default %>/javascript/**/*.js']
 
     # This create a style.css file required by WordPress
     'file-creator':
@@ -324,7 +329,6 @@ module.exports = (grunt) ->
 
   # Scripts
   grunt.registerTask 'scripts', [
-    'eslint'
     'concat'
     'uglify'
     'copy:scripts'

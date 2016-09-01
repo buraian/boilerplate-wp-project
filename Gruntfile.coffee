@@ -304,6 +304,7 @@ module.exports = (grunt) ->
 
   # Build task
   grunt.registerTask 'build', [
+    'mkdir'
     'clean'
     'file-creator'
     'images'
@@ -326,6 +327,12 @@ module.exports = (grunt) ->
     'imagemin'
     'pngmin'
   ]
+
+  # Make Directories
+  grunt.registerTask 'mkdir', () ->
+    # Each Theme
+    for k,v of grunt.config('themes')
+      grunt.file.mkdir "#{grunt.config('build')}/#{grunt.config('themes')[k]}"
 
   # Scripts
   grunt.registerTask 'scripts', [

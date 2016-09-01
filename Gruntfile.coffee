@@ -9,9 +9,10 @@ module.exports = (grunt) ->
 
     # Metadata
     pkg: grunt.file.readJSON 'package.json'
+    name: 'boilerplate-wp-theme-default'
     banner:
       """
-      /*! <%= pkg.name %> - v<%= pkg.version %>
+      /*! <%= name %> - v<%= pkg.version %>
        * Copyright (c) <%= grunt.template.today('yyyy') %> <%= pkg.author.name %> <<%= pkg.author.url %>> */
 
 
@@ -22,8 +23,8 @@ module.exports = (grunt) ->
     build: 'build'
 
     themes:
-      default: 'themes/<%= pkg.name %>'
-      # junior: 'themes/<%= pkg.name %>-junior'
+      default: 'themes/<%= name %>'
+      # junior: 'themes/<%= name %>-junior'
     # plugins:
     #   custom: 'plugins/custom'
     #   another: 'plugins/another'
@@ -133,7 +134,7 @@ module.exports = (grunt) ->
           fs.writeSync fd, grunt.template.process(
             """
             /*
-            Theme Name: <%= pkg.name %>
+            Theme Name: <%= name %>
             Author: <%= pkg.author.name %>
             Author URI: <%= pkg.author.url %>
             Description: <%= pkg.description %>

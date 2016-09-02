@@ -45,10 +45,10 @@ module.exports = (grunt) ->
         banner: '<%= banner %>'
       dist:
         src: [
-          # 'node_modules/foundation-sites/js/foundation/foundation.js'
+          'node_modules/foundation-sites/js/foundation/foundation.js'
           # 'node_modules/foundation-sites/js/foundation/foundation.abide.js'
           # 'node_modules/foundation-sites/js/foundation/foundation.accordion.js'
-          # 'node_modules/foundation-sites/js/foundation/foundation.alert.js'
+          'node_modules/foundation-sites/js/foundation/foundation.alert.js'
           # 'node_modules/foundation-sites/js/foundation/foundation.clearing.js'
           # 'node_modules/foundation-sites/js/foundation/foundation.dropdown.js'
           # 'node_modules/foundation-sites/js/foundation/foundation.equalizer.js'

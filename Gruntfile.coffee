@@ -4,6 +4,9 @@ module.exports = (grunt) ->
   require('load-grunt-tasks') grunt
   require('time-grunt') grunt
 
+  modernizrConfig = require('./node_modules/modernizr/lib/config-all.json')
+  modernizrTests = modernizrConfig['feature-detects']
+
   # Project configuration
   grunt.initConfig
 
@@ -45,6 +48,7 @@ module.exports = (grunt) ->
         banner: '<%= banner %>'
       dist:
         src: [
+          '<%= build %>/<%= themes.default %>/assets/js/modernizr-output.js'
           'node_modules/foundation-sites/js/foundation/foundation.js'
           # 'node_modules/foundation-sites/js/foundation/foundation.abide.js'
           # 'node_modules/foundation-sites/js/foundation/foundation.accordion.js'
@@ -166,6 +170,25 @@ module.exports = (grunt) ->
           dest: '<%= build %>/<%= themes.default %>/assets/images/'
           flatten: true
         ]
+
+    # https://github.com/Modernizr/customizr#config-file
+    modernizr:
+      dist:
+        customTests: []
+        dest: '<%= build %>/<%= themes.default %>/assets/js/modernizr-output.js'
+        devFile: false
+        options: [
+          'setClasses'
+        ]
+        parseFiles: true
+        uglify: true
+        tests: modernizrTests
+        excludeTests: []
+        crawl: false
+        useBuffers: false
+        files:
+          src: ['/node_modules/modernizr/lib/config-all.json']
+        customTests: []
 
     pngmin:
       compile:
@@ -337,6 +360,7 @@ module.exports = (grunt) ->
 
   # Scripts
   grunt.registerTask 'scripts', [
+    'modernizr'
     'concat'
     'uglify'
     'copy:scripts'

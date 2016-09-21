@@ -10,7 +10,7 @@ bower_components/*
 node_modules/*
 npm-debug.log
 
-build/
-vendor/
-wordpress/
+/build/
+/vendor/
+/wordpress/
 wp-cli.local.yml

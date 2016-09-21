@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:buraian/boilerplate-wp-project.git"
+    "url": "git@gitlab.com:buraian/boilerplate-wp-project.git"
   },
   "dependencies": {
     "font-awesome": "^4.6.3",

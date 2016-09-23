@@ -319,6 +319,12 @@ module.exports = (grunt) ->
         tasks: ['newer:copy:templates']
         options:
           livereload: true
+          
+      videos:
+        files: ['<%= src %>/<%= themes.default %>/**/*.{mp4,ogv,webm}']
+        tasks: ['copy:videos']
+        options:
+          livereload: true
 
   # Default task
   grunt.registerTask 'default', [

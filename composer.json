@@ -28,6 +28,7 @@
     "wpackagist-plugin/so-widgets-bundle": "1.6.5",
     "wpackagist-plugin/tinymce-advanced": "4.4.1",
     "wpackagist-plugin/user-switching": "1.0.9",
+    "wpackagist-plugin/wordpress-importer": "0.6.3",
     "wpackagist-plugin/wordpress-seo": "3.4.2",
     "wpackagist-plugin/wp-fail2ban": "3.5.3"
   },
